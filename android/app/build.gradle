@@ -28,6 +28,7 @@ apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 def dartEnvironmentVariables = [
     DEFINE_APP_NAME: 'Cronos Banking',
     DEFINE_APP_ID: 'com.example.app',
+    DEFINE_SUFFIX_NAME: null,
 ]
 
 if (project.hasProperty('dart-defines')) {
@@ -58,6 +59,7 @@ android {
 
     defaultConfig {
         applicationId dartEnvironmentVariables.DEFINE_APP_ID
+        applicationIdSuffix dartEnvironmentVariables.DEFINE_SUFFIX_NAME
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()

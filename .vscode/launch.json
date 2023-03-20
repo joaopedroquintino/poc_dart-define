@@ -13,6 +13,8 @@
         "DEFINE_APP_ID=br.com.whitelabel.app",
         "--dart-define",
         "DEFINE_APP_NAME=App White Label",
+        "--dart-define",
+        "DEFINE_SUFFIX_NAME=.dev",
       ]
     },
   ]
